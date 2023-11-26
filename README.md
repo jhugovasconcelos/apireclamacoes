@@ -4,7 +4,11 @@ Projeto de API Rest utilizando o framework Spring em Java que recebe reclamaçõ
 A API consiste em um mapeamento das 4 operações CRUD com os verbos HTTP, Get, Put, Post e Delete, para fazer as inserções e atualizações no banco de dados, e conta com as bibliotecas JPA Hibernate para fazer o trabalho de criação 
 das tabelas e dos scripts SQL por detrás. 
 
-## Requisitos
+## Pré-requisitos
+- Java: Versão 21
+- Banco de dados: Postgres
+
+## Requisitos do projeto
 - *Uma URI que recebe o formulário com as informações e efetua a gravação no banco de dados*: a URI "/reclamacoes", no método POST;
 - *Uma URI para listar todos os itens*: a URI "/reclamacoes", no método GET;
 - *Uma URI para apresentar os detalhes de um item específico a partir da sua identificação*: a URI "reclamacoes/{id}", no método GET;
