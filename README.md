@@ -49,7 +49,15 @@ A API funciona da seguinte forma:
 4. Caso o cliente queira atualizar a reclamação, ele pode fazê-lo, buscando pelo id também:
     - URI: http://localhost:8080/reclamacoes/{id}
     - Método: PUT
-    - Inserir dados que serão mudados apenas
+    - Dados no formato JSON:
+        ```
+    {
+        "nomeReclamante": "String",
+        "codigoRastreamento": Integer,
+        "telefoneReclamante": "String",
+        "descricaoReclamacao": "String"
+    }
+    ```
 
 5. Para exclur um dado:
     - URI: http://localhost:8080/reclamacoes/{id}
