@@ -50,7 +50,7 @@ A API funciona da seguinte forma:
     - URI: http://localhost:8080/reclamacoes/{id}
     - Método: PUT
     - Dados no formato JSON:
-        ```
+    ```
     {
         "nomeReclamante": "String",
         "codigoRastreamento": Integer,
