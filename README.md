@@ -21,7 +21,11 @@ das tabelas e dos scripts SQL por detrás.
 ## Na prática
 A API funciona da seguinte forma:
 
-1. O cliente insere os dados e a reclamação:
+1. Para listar todas as reclamações:
+    - URI: http://localhost:8080/reclamacoes
+    - Método: GET
+
+2. O cliente insere os dados e a reclamação:
     - URI: http://localhost:8080/reclamacoes
     - Método: POST
     - Dados no formato JSON: 
@@ -33,7 +37,7 @@ A API funciona da seguinte forma:
         "descricaoReclamacao": "String"
     }
     ```
-2. A empresa pega a reclamação pelo id. e insere a solução por meio de uma URI separada:
+3. A empresa pega a reclamação pelo id. e insere a solução por meio de uma **URI separada**:
     - URI: http://localhost:8080/solucoes/{id}
     - Método: PUT
     - Dados no formato JSON:
@@ -42,13 +46,18 @@ A API funciona da seguinte forma:
         "descricaoSolucao": "String"
     }
     ```
-3. Caso o cliente queira atualizar a reclamação, ele pode fazêlo, buscando pelo id também:
+4. Caso o cliente queira atualizar a reclamação, ele pode fazê-lo, buscando pelo id também:
     - URI: http://localhost:8080/reclamacoes
     - Método: PUT
-4. Para exclur um dado:
+    - 
+
+5. Para exclur um dado:
     - URI: http://localhost:8080/reclamacoes/{id}
     - Método: DELETE
-5. Para listar um a
+
+6. Para listar uma reclamação específica:
+    - URI: http://localhost:8080/reclamacoes/{id}
+    - Método: GET
 
 ## Divisão dos pacotes
 A aplicação principal está dividida em 5 pacotes:
