@@ -62,4 +62,4 @@ A aplicação principal está dividida em 5 pacotes:
 ## Escalonamento
 Futuramente, é possível expandir a API adicionando controllers, DTOs, models e criando views para apresentar os dados de uma forma mais atraente. 
 
-[^1]: Para alterar as configurações do banco de dados, edite o arquivo [application.properties](/src/main/resources/application.properties)
+[^1]: Para alterar as configurações do banco de dados, edite o arquivo [application.properties](src/main/resources/application.properties)
